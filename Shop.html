@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Goyangi Care</title>
+</head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-secondary">
+    <div class="container">
+      <a class="navbar-brand" href="halaman1.html">Goyangi Care</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="Shop.html">Shop <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Pelayanan.html">Pelayanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="DafLog.html">Daftar/Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#About">About</a>
+          </li>
+        </ul>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM4 14a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm7 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9V5.5z"/>
+            </svg>Troli Anda
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Silahkan Login terlebih dahulu</a>
+          </div>
+        </div>
+        <div class="p-1 mb-1 bg-secondary text-dark">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-0 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container" style="padding-top: 76px">
+  <h2 style="text-align:center;">Kategori</h2>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <a class="link" href="#food">Food</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <a class="link" href="#grooming">Grooming Supplies</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            <a class="link" href="#other">Aksesoris</a>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="food" style="padding-top: 76px">
+    <h3>Food</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem;">
+            <img src="gambar/whiskas.jpg" class="card-img-top" alt="whiskas dry food">
+            <div class="card-body">
+              <h5 class="card-title">WHISKAS MACKEREL DRY FOOD 1.2 KG</h5>
+              <p class="card-text">Rp115.000</p>
+              <div class="form-group col-md-5">
+                <label for="inputState">Jumlah</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Pilih</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem;">
+            <img src="gambar/RC2kg.jpeg" class="card-img-top" alt="Royal Canin 2 KG dry food">
+            <div class="card-body">
+              <h5 class="card-title">ROYAL CANIN KITTEN DRY FOOD 2KG</h5>
+              <p class="card-text">Rp225.000</p>
+              <div class="form-group col-md-5">
+                <label for="inputState">Jumlah</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Pilih</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem;">
+            <img src="gambar/KitCat.jpg" class="card-img-top" alt="KitCat wetfood">
+            <div class="card-body">
+              <h5 class="card-title">KITCAT TUNA & SALMON WET FOOD 400GR</h5>
+              <p class="card-text">Rp17.000</p>
+              <div class="form-group col-md-5">
+                <label for="inputState">Jumlah</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Pilih</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 17rem;">
+            <img src="gambar/LifeCatTuna.jpg" class="card-img-top" alt="Wet Foof LifeCat Tuna">
+            <div class="card-body">
+              <h5 class="card-title">LIFECAT TUNA WET FOOD 400GR</h5>
+              <p class="card-text">Rp13.000</p>
+              <div class="form-group col-md-5">
+                <label for="inputState">Jumlah</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Pilih</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="grooming" style="padding-top: 76px">
+      <h3>Grooming Supplies</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/KitShort.jpg" class="card-img-top" alt="Catit Short hair Grooming Kit">
+              <div class="card-body">
+                <h5 class="card-title">CATIT SHORT HAIR GROOMING KIT</h5>
+                <p class="card-text">Rp420.000 </p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/KitLong.jpg" class="card-img-top" alt="Catit Long hair Grooming Kit">
+              <div class="card-body">
+                <h5 class="card-title">CATIT LONG HAIR GROOMING KIT</h5>
+                <p class="card-text">Some</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/Sisir.jpeg" class="card-img-top" alt="Sisir Sikat Stainless Pet Grooming Brush">
+              <div class="card-body">
+                <h5 class="card-title">SISIR SIKAT STAINLESS BRUSH</h5>
+                <p class="card-text">Rp75.000</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/EAR.jpg" class="card-img-top" alt="pembersih telinga Pet Silk Ear Cleaner 118 ml ">
+              <div class="card-body">
+                <h5 class="card-title">CAIRAN EAR CLEANER SILK 118ML</h5>
+                <p class="card-text">Some</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="other" style="padding-top: 76px">
+      <h3>Aksesoris</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/CatLitter.png" class="card-img-top" alt="Cat Litter Box 3 in 1">
+              <div class="card-body">
+                <h5 class="card-title">CAT LITTER BOX 3 IN 1 (43x33x11CM)</h5>
+                <p class="card-text">Rp200.000</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/BolaKucing.png" class="card-img-top" alt="Mainan Kucing Bola Kecil">
+              <div class="card-body">
+                <h5 class="card-title">BOLA KECIL MAINAN KUCING (Diameter 8 cm)</h5>
+                <p class="card-text">Rp5.000</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/FoodDispenser.png" class="card-img-top" alt="Tempat Makan Dispenser">
+              <div class="card-body">
+                <h5 class="card-title">TEMPAT MAKAN DISPENSER KUCING </h5>
+                <p class="card-text">Rp20.000</p>
+                <div class="form-group col-md-5">
+                  <label for="inputState">Jumlah</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Pilih</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card" style="width: 17rem;">
+              <img src="gambar/kandang.png" class="card-img-top" alt="Kandang">
+              <div class="card-body">
+                <h5 class="card-title">KANDANG SIZE XXL JUMBO 95X70X60CM</h5>
+                <p class="card-text">Rp400.000</p>
+                <div class="form-group col-md-5">
+                    <label for="inputState">Jumlah</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Pilih</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tambahkan ke Troli</button>
+                  <!-- Modal -->
+                  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Pemberitahuan</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="alert alert-danger" role="alert">
+                          Silahkan Login Terlebih Dahulu</div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Oke</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+            <div id="About">
+                <h2 style="text-align:left;">About</h2>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <p style="text-align: justify;">Kami menyediakan produk lokal dan internasional untuk CatLovers di seluruh Indonesia. Kami memiliki banyak produk yg dapat memenuhi kebutuhan kucing kesayangan Anda dengan menawarkan berbagai produk pilihan dari berbagai kategori, mulai dari makanan, vitamin dan obat-obatan, mainan, aksesoris, baju, kandang, dan lainnya</p>
+          </div>
+          <div class="col-md-6">
+              <h4 style="text-align:center;">Don't Forget to Follow Us</h4>
+              <div class="row text-center">
+                <div class="col">
+                  <a href="https://www.youtube.com/channel/UCwviG_7JBb-K48ZD2mZs16Q" class="fa fa-youtube"></a>
+                  <a href="https://www.instagram.com/annisacintkm/" class="fa fa-instagram"></a>
+                </div>
+              </div>
+              <p><a href="mailto:GoyangiCare@gmail.com">GoyangiCare@gmail.com</a></p>
+          </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px;
+}
+.fa:hover {
+    opacity: 0.5;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: lightgrey;}
